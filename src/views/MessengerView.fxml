@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MessengerViewController">
+   <children>
+      <ListView fx:id="usersListView" layoutX="14.0" layoutY="14.0" prefHeight="408.0" prefWidth="185.0" />
+      <Button fx:id="sendButton" defaultButton="true" layoutX="636.0" layoutY="432.0" mnemonicParsing="false" onAction="#onSendButton" prefHeight="35.0" prefWidth="70.0" text="Send">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="messageTextField" layoutX="211.0" layoutY="432.0" prefHeight="35.0" prefWidth="418.0" promptText="Enter message">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="disconnectButton" layoutX="14.0" layoutY="432.0" mnemonicParsing="false" onAction="#onDisconnectButton" prefHeight="35.0" prefWidth="186.0" text="Disconnect">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="conversationTextArea" editable="false" layoutX="211.0" layoutY="14.0" prefHeight="408.0" prefWidth="495.0" />
+   </children>
+</AnchorPane>
